@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolio</title>
 
+
+<!-- --------------- aos animation js ----------------  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- --------------- Swiper js ----------------  -->
     <link
   rel="stylesheet"
@@ -52,7 +55,7 @@
     <!-- ####### Hero Section ######## -->
     <section class="hero section" id="hero">
         <div class="hero_container container grid ">
-            <div class="hero_content">
+            <div class="hero_content" data-aos="fade-in">
                 <h4>hi there,</h4>
                 <h1>I'm your
                   <span class="typed" data-typed-items="Enthusiastic, Developer, Data-analyst, PMO, IT administrator"></span>
@@ -70,29 +73,29 @@
                     Hire me
                     <ion-icon name="chevron-forward-outline"></ion-icon>
                 </a>
-                <a href= "./images/curriculum vitae2.pdf" download="" _blank= "" class="btn">
+                <a href= "./images/curriculum vitae2.pdf" download="" _blank= "" class=" btn btn2">
                     Download CV
                     <i class='bx bxs-download' ></i>
                 </a>
             </div>
             <div class="hero_img">
-                <img src="./images/photo1.jpeg"  class="img-fluid" alt="">
+                <img src="./images/portrait2.png"  class="img-fluid" alt="">
             </div>
         </div>
     </section>
    <!-- ####### About Section ######## -->
-  <section class="hero section " id="about">
-    <h2 class="section_title">About Me</h2>
+  <section class="hero section " id="about"  >
+    <h2 class="section_title" data-aos="fade-up">About Me</h2>
     <div class="about_container container grid">
-        <div class="about_img">
-            <img src="./images/about-1.png" alt="">
+        <div class="about_img" data-aos="zoom-in-down">
+            <img src="./images/photo2.jpeg" alt="">
         </div>
-        <div class="about_content reveal">
+        <div class="about_content " data-aos="zoom-in">
             <h1>I make a professional and creative work </h1>
             <p>
                 I am a seasoned professional with a strong background as a PMO and Data Analyst. Currently transitioning into system administration and networks, I aim to leverage my skills to support small to medium-sized enterprises, fostering strong social connections with their teams. With experience in complex and dynamic environments, I am committed to broadening my horizons and actively contributing to the success of technological and organizational projects
             </p>
-            <div class="about_info">
+            <div class="about_info" data-aos="fade-down">
                 <div>
                     <span class="number">+100</span><br>
                     <span class="text">Completed <br>projects</span>
@@ -110,7 +113,7 @@
    <!-- ####### Resume Section ######## -->
 
 <section class="resume section " id="resume">
-    <h2 class="section_title">Resume</h2>
+    <h2 class="section_title" data-aos="fade-down">Resume</h2>
     <div class="resume_container container grid">
         <div class="resume_tabs">
             <ul>
@@ -173,8 +176,8 @@
                 </div>
             </div>
             <div id="page-2" class="page two">
-                <div class="page_heading">Experience</div>
-                <div class="resume_wrap">
+                <div class="page_heading" data-aos="fade-down">Experience</div>
+                <div class="resume_wrap" data-aos="zoom-in">
                     <div class="resume_wrap-icon">
                         <ion-icon name="briefcase-outline"></ion-icon>
                     </div>
@@ -190,11 +193,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="resume_wrap">
+                <div class="resume_wrap" data-aos="zoom-in">
                     <div class="resume_wrap-icon">
                         <ion-icon name="briefcase-outline"></ion-icon>
                     </div>
-                    <div class="resume_wrap-content">
+                    <div class="resume_wrap-content" data-aos="zoom-in">
                         <span class="date">2015-2016</span>
                         <h4>UI/UX Designer</h4>
                         <span class="position">Mansoura University</span>
@@ -206,11 +209,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="resume_wrap">
+                <div class="resume_wrap" data-aos="zoom-in">
                     <div class="resume_wrap-icon">
                         <ion-icon name="briefcase-outline"></ion-icon>
                     </div>
-                    <div class="resume_wrap-content">
+                    <div class="resume_wrap-content" >
                         <span class="date">2017-2018</span>
                         <h4>Web Marketing</h4>
                         <span class="position"> University Company</span>
@@ -224,8 +227,8 @@
                 </div>
             </div>
             <div id="page-3" class="page three">
-                <div class="page_heading">Skills</div>
-                    <div class="progressBox grid">
+                <div class="page_heading" data-aos="fade-down">Skills</div>
+                    <div class="progressBox grid" data-aos="zoom-in">
                         <div class="progressBox">
                             <div class="progress_name">
                                 <span>HTML</span>
@@ -302,8 +305,8 @@
                     </div>
             </div>
             <div id="page-4" class="page four">
-                <div class="page_heading">Awards</div>
-                <div class="resume_wrap">
+                <div class="page_heading" data-aos="fade-down">Awards</div>
+                <div class="resume_wrap" data-aos="zoom-in">
                     <div class="resume_wrap-icon">
                         <ion-icon name="ribbon-outline"></ion-icon>
                     </div>
@@ -319,7 +322,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="resume_wrap">
+                <div class="resume_wrap" data-aos="zoom-in">
                     <div class="resume_wrap-icon">
                         <ion-icon name="ribbon-outline"></ion-icon>
                     </div>
@@ -335,7 +338,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="resume_wrap">
+                <div class="resume_wrap" data-aos="zoom-in">
                     <div class="resume_wrap-icon">
                         <ion-icon name="ribbon-outline"></ion-icon>
                     </div>
@@ -358,10 +361,10 @@
 
 <!-- ####### portfolio Section ######## -->
 
-<div class="portfolio section" id="portfolio">
-    <h2 class="section_title">Portfolio</h2>
+<section class="portfolio section" id="portfolio">
+    <h2 class="section_title" data-aos="fade-down">Portfolio</h2>
 
-    <div class="portfolio_container container">
+    <div class="portfolio_container container" data-aos="zoom-in">
         <ul class="portfolio_filters">
             <li data-filter="*" class="filter_active" >All</li>
             <li data-filter=".filter-app" >Windows</li>
@@ -373,19 +376,18 @@
             <li data-filter=".filter-web" >Data</li>
             <li data-filter=".filter-web" >Autres</li>
         </ul>
-        <div class="portfolio_wrap-container">
+        <div class="portfolio_wrap-container" >
             <div class="portfolio_item filter-web">
                 <div class="portfolio_wrap">
                     <img src="images/web1.png" alt="" class="img-fluid">
                     <div class="portfolio_info">
                         <h4>web 1</h4>  <!-- title article -->
-                        <p>Web</p>    <!-- category article -->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel possimus, aspernatur dicta ab sequi earum veniam accusamus a debitis!</p>    <!-- category article -->
                         <div class="portfolio_links">
                             <a rel="https://github.com/yannhunter/GOAD" target="_blank">
                                 <ion-icon name="logo-github"></ion-icon>
                             </a>
-                            <ion-icon name="arrow-down-circle-outline"></ion-icon>
-                           
+                                                       
                         </div>
                     </div>
                 </div>
@@ -496,7 +498,7 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- ####### Testimonial Section ######## -->
 <!-- <div class="testimonial section">
@@ -680,22 +682,18 @@
     </div>
 </div> -->
 <!-- ####### Contact Section ######## -->
-<div class="contact section" id="contact">
-    <h2 class="section_title">Contact Me</h2>
-    <div class="contact_container container">
-        <div class="contact_content">
-            <div class="inputs">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-            </div>
-            <input type="password" placeholder="Password">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            <a href="#" class="btn">Send Message <ion-icon name="chevron-forward-outline"></ion-icon>
-
-            </a>
-        </div>
+<section class="contact section" id="contact">
+    <h2 class="section_title" data-aos="fade-down">Contact Me</h2>
+    <div class="contact_container container" data-aos="fade-down" >
+        <form action="">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Email Adress.." required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here" required></textarea>
+            <input type="submit" name="" value="Send Message" class="send-btn">
+        </form>
+        
     </div>
-</div>
+</section>
 
 <!-- ####### Footer Section ######## -->
 
@@ -724,7 +722,15 @@
 
 
 
+<!--------------------- aos  js ------------ -->
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:300,
+    duration:1400,
+  });
+</script>
 
 <!--------------------- Swiper js ------------ -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

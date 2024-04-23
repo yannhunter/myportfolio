@@ -65,14 +65,23 @@ ul{
     transition: .4s;
 }
 .btn:hover{
-    background-color: transparent;
+    background: transparent;
     border: 2px solid var(--main-color);
     color: var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
 }
 .btn i {
     font-size: 20px;
     margin-left: 10px;
 }
+.btn2{
+    background: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    margin-left: 15px;
+    transition: all .50s ease;
+}
+
 .section_title {
     text-align: center;
     font-size: 36px;
@@ -110,17 +119,6 @@ ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
-}
-
-.reveal{
-    opacity: 0;
-    transform: translateY(-30px);
-}
-
-.reveal-visible{
-    opacity: 1;
-    transform: translateY(0);
-    transition: cubic-bezier(0.5, 0, 0, 1);
 }
 
 
@@ -361,6 +359,14 @@ display: none;
 .about_info > div .text{
 font-size: 15px;
 font-weight: 600;
+}
+.about_img img{
+    width: 100%;
+    height: 430px;
+    max-width: 430px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 7px solid var(--main-color);
 }
 
 @media screen and (max-width: 992px){
@@ -824,48 +830,55 @@ color: var(--main-color);
 }
 .contact_container{
     display: flex;
+    align-items: center;
     justify-content: center;
+    margin-top: 4.2rem;
 }
-.contact_content{
-    min-width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 50px;
+.contact_container form{
+    position: relative;
+    width: 600px;
 }
-.inputs{
-    display: flex;
-    justify-content: space-between;
-    column-gap: 20px;
-}
-input{
-    margin-bottom: 30px;
+form  input,
+form textarea{
     width: 100%;
-}
-input,textarea{
-    border-radius: 10px;
     padding: 20px;
     border: none;
     outline: none;
-    background-color: #eee;
-    color: var(--title-color);
-    font-size: 16px;
+    box-shadow: 0 0 5px var(--main-color) ;
+    background: var(--subtitle-color);
+    color: #faf9ff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+
 }
-input:focus,
-textarea:focus{
-    box-shadow: 0 0 5px #a8bbe0;
+form  input::placeholder,
+form textarea::placeholder{
+    color:#eee;
+    font-size: 15px;
 }
-.contact_content .btn{
-    width: 185px;
-    margin-top: 20px ;
-    display: flex;
-    align-items: center;
-    column-gap: 10px ;
+form .send-btn{
+    display: inline-block;
+    padding: 11px 26px;
+    background: var(--main-color);
+    color: #faf9ff;
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .50s ease;
+    width: 30%;
+
+}
+form .send-btn:hover{
+    background: var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
+    cursor: pointer;
+
 }
 
+
 @media screen and (max-width: 576px) {
-    .contact_content {
-        padding: 0;
-    }
+   
     .inputs{
         flex-direction: column;
     }
