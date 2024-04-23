@@ -8,6 +8,19 @@
       {
         "link-name": "off"
       }
-    ]
-  }
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ],
+    "no-inline-styles": "off"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ios_saf <= 17.2",
+    "not safari <= 17.2"
+  ]
 }
