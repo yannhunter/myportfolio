@@ -498,8 +498,15 @@ color: var(--main-color);
     display: flex;
     justify-content: space-between;
     font-weight: 500;
+    font-size: 14px;
     color: var(--title-color);
     margin-bottom: 10px;
+}
+.titlebar{
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    font-size: 11px;
 }
 .progress{
     width: 100%;
@@ -648,10 +655,13 @@ color: var(--main-color);
     font-size: 24px;
     color: #333;
     font-weight: 500;
+    text-transform:uppercase;
 
 }
 .portfolio_info p{
-    text-transform: uppercase;
+    text-transform: none;
+    font-size: 14px;
+    text-align: center;
 
 }
 .portfolio_links a{
@@ -875,8 +885,6 @@ form .send-btn:hover{
     cursor: pointer;
 
 }
-
-
 @media screen and (max-width: 576px) {
    
     .inputs{
@@ -884,12 +892,10 @@ form .send-btn:hover{
     }
 }
 
-
 /* ======= Footer =========== */
 .footer_bg {
     background-color: var(--main-color);
     padding-top: 30px;
-
 }
 .footer_container{
     text-align: center;
